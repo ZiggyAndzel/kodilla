@@ -6,6 +6,8 @@ button.addEventListener('click', function(){
 	getJoke();
 });
 
+window.onload = getJoke();
+
 function getJoke() {
 	var xhr = new XMLHttpRequest();
 	xhr.open('GET', url);
