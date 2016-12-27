@@ -3,38 +3,112 @@
 body {
 	margin: 0;
 	padding: 0;
+	background: #aaa;
+}
+
+h1 {
+	margin: 0;
+	font-family: Impact;
+	font-size: 120px;
+	text-transform: uppercase;
+	color: #bbb;
 }
 
 #board {
-	width: auto;
-	height: 600px;
+	max-width: 1200px;
+	min-height: 300px;
 	margin: 0 auto;
+	position: relative;
+	margin-top: 20vh
+}
+
+.create-column {
+	position: absolute;
+	top: 79.5px;
+	right: 280px;
+	background: #A8A27D;
+	color: #fff;
+}
+
+.create-column:hover {
+	background: #7A786F;
+	color: #fff;
 }
 
 .column {
-	width: 33.33%;
+	width: 32%;
 	height: 100%;
 	float: left;
-	border: 1px solid #000;
-	background: yellow;
+	border: 1px solid #5D5D5D;
+	border-radius: 8px;
+	background: #F1E49B;
+	margin: 0 5px;
+	position: relative;
+	color: #5D5D5D;
+}
+
+.column-title {
+	margin: 5px;
+}
+
+.delete-column {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	color:  #5D5D5D;
+	position: absolute;
+	top: 0;
+	right: 5px;
+}
+
+.add-card {
+	position: absolute;
+	top: 5px;
+	right: 80px;
+	background: #A8A27D;
+	color: #fff;
+}
+
+.add-card:hover {
+	background: #7A786F;
+	color: #fff;
+}
+
+.ui-sortable {
+	min-height: 100px;
 }
 
 ul {
 	list-style-type: none;
 	padding-left: 0;
+	background: #7A786F;
+	margin: 10px 5px;
+	border-radius: 10px;
 }
 
 ul li {
+	position: relative;
 	width: 100%;
 	height: 60px;
-	border: 1px solid green;
+	margin: 5px 0;
+	padding: 0 20px;
+	background: #FFE54F;
+	color: #5D5D5D;
+	border: 1px solid #5B5B5B;
+	border-radius: 10px;
 	line-height: 58px;
 }
 
-.btn-danger {
-	width: 30px;
-	height: 30px;
+ul li .delete-card {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #5B5B5B;
 	border-radius: 50%;
-	margin: 15px 10px;
+	font-size: 14px;
+	line-height: 17px;
 	text-align: center;
 }
+

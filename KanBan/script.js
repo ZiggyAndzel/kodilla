@@ -20,8 +20,8 @@ $(function() {
 			var $column = $('<div>').addClass('column');
 			var $columnTitle = $('<h2>').addClass('column-title').text(self.name);
 			var $columnCardList = $('<ul>').addClass('column-card-list');
-			var $columnDelete = $('<button>').addClass('btn btn-danger').text('x');
-			var $columnAddCard = $('<button>').addClass('add-card').text('Dodaj kartę');
+			var $columnDelete = $('<a>').addClass('close delete-column').text('x');
+			var $columnAddCard = $('<button>').addClass('add-card btn').text('Dodaj kartę');
 			
 			$columnDelete.click(function() {
 				self.removeColumn();
@@ -58,7 +58,7 @@ $(function() {
 		function createCard() {
 			var $card = $('<li>').addClass('card');
 			var $cardDescription = $('<p>').addClass('card-description').text(self.description);
-			var $cardDelete = $('<button>').addClass('btn btn-danger').text('x');
+			var $cardDelete = $('<a>').addClass('close delete-card').text('x');
 			
 			$cardDelete.click(function(){
 				self.removeCard();
