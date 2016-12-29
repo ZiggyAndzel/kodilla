@@ -1,0 +1,37 @@
+* {box-sizing: border-box;}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #AAC9DA;
+}
+
+h1, h2, h3 {
+	color: #055A87;
+}
+
+button {
+	margin: 30px 363.5px;
+}
+
+i {
+	margin: 20px auto;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+	margin-top: 10vh;
+	padding: 30px;
+	border: 1px solid #055A87;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.box {
+	margin-top: 60px;
+}
